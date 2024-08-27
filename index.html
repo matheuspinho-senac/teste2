@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de PTD</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulário Geração de PTD</h2>
+        <form id="courseForm">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="course">Curso:</label>
+                    <input type="text" id="course" name="course" placeholder="Clique aqui para digitar..." required>
+                </div>
+                <div class="form-group">
+                    <label for="workload">Carga Horária do Curso:</label>
+                    <input type="number" id="workload" name="workload" placeholder="Clique aqui para digitar..." min="1" max="100" required>
+                </div>
+                <div class="form-group">
+                    <label for="eixo">Eixo/Segmento:</label>
+                    <input type="text" id="eixo" name="eixo" placeholder="Clique aqui para digitar..." required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="tipo">Tipo de Curso:</label>
+                    <input type="text" id="tipo" name="tipo" placeholder="Clique aqui para digitar..." required>
+                </div>
+                <div class="form-group">
+                    <label for="uc">UC:</label>
+                    <input type="text" id="uc" name="uc" placeholder="Clique aqui para digitar..." required>
+                </div>
+                <div class="form-group">
+                    <label for="ch">Carga Horária da UC:</label>
+                    <input type="number" id="ch" name="ch" placeholder="Clique aqui para digitar..." min="1" max="5000" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group" style="flex: 1;">
+                    <label for="situAprendizagem">Situações de Aprendizagem:</label>
+                    <input type="number" id="situAprendizagem" name="situAprendizagem" placeholder="Clique aqui para digitar..." required>
+                </div>
+            </div>
+            <button type="submit">Avançar</button>
+        </form>
+    </div>
+</body>
+</html>

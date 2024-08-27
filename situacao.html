@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gerador de PTD</title>
+    <script src="script3.js" defer></script>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="container">
+        <section>
+            <h2 id="situacaoTitle">Situação de Aprendizagem</h2>
+            <form id="situacaoForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nomeSituacao">Nome da Situação de Aprendizagem:</label>
+                        <input type="text" id="nomeSituacao" name="nomeSituacao" placeholder="Digite o nome da situação de aprendizagem..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nAulas">N° de Aulas:</label>
+                        <input type="number" id="nAulas" name="nAulas" placeholder="Digite o número de aulas..." min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="indicadores">Indicadores:</label>
+                        <input type="text" id="indicadores" name="indicadores" placeholder="Digite os indicadores..." required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="elementosCompetencia">Elementos da Competência:</label>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="conhecimentos">Conhecimentos:</label>
+                        <textarea id="conhecimentos" name="conhecimentos" placeholder="Descreva os conhecimentos trabalhados..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="habilidades">Habilidades:</label>
+                        <textarea id="habilidades" name="habilidades" placeholder="Descreva as habilidades trabalhadas..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="atitudes">Atitudes/valores:</label>
+                        <textarea id="atitudes" name="atitudes" placeholder="Descreva as atitudes/valores trabalhados..." required></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="contexto">Contexto da Situação de Aprendizagem:</label>
+                        <textarea id="contexto" name="contexto" placeholder="Descreva o contexto da situação de aprendizagem..." required></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Marcas Formativas:</label>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="checkbox" id="dominioTecnico" name="marcasFormativas" value="Domínio técnico-científico">
+                            <label for="dominioTecnico">Domínio técnico-científico</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="visaoCritica" name="marcasFormativas" value="Visão crítica">
+                            <label for="visaoCritica">Visão crítica</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="checkbox" id="atitudeSustentavel" name="marcasFormativas" value="Atitude sustentável">
+                            <label for="atitudeSustentavel">Atitude sustentável</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="colaboracao" name="marcasFormativas" value="Colaboração e comunicação">
+                            <label for="colaboracao">Colaboração e comunicação</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="checkbox" id="criatividade" name="marcasFormativas" value="Criatividade e atitude empreendedora">
+                            <label for="criatividade">Criatividade e atitude empreendedora</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="autonomiaDigital" name="marcasFormativas" value="Autonomia digital">
+                            <label for="autonomiaDigital">Autonomia digital</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit">Avançar</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
